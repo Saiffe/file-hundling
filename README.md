@@ -19,3 +19,23 @@ except FileNotFoundError:
     print("Error: The input file does not exist.")
 except IOError:
     print("Error: There was an issue reading or writing the file.")
+2
+# Error Handling Lab 🧪
+
+filename = input("Enter the filename: ")
+
+try:
+    with open(filename, "r") as file:
+        content = file.read()
+    print("File content:")
+    print(content)
+
+except FileNotFoundError:
+    print(f"Error: The file '{filename}' does not exist.")
+except IOError:
+    print(f"Error: Could not read the file '{filename}'.")
+
+
+
+
+
